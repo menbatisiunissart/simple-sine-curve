@@ -1,0 +1,17 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+ray = {version = "==1.13.0", extras = ["default", "rllib", "serve", "tune"]}
+tensortrade = {git = "https://github.com/menbatisiunissart/tensortrade.git"}
+symfit = "*"
+torch = "*"
+torchvision = "*"
+
+[dev-packages]
+tensorboard = "*"
+
+[requires]
+python_version = "3.9"
